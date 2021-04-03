@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: digital;
+  src: url(digital.ttf);
+}
+body {
+  font-family: digital;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  user-select: none;
+}
+.container {
+  position: relative;
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 560px;
+  height: 300px;
+}
+.screen {
+  width: 500px;
+  height: 180px;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+  transform: rotateY(-15deg) rotateZ(3deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  height: 78px;
+}
+.ampm {
+  font-size: 17px;
+  transform: translateY(-13px);
+  margin-right: 10px;
+}
+.time {
+  font-size: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7px;
+}
+.dateInbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.temp {
+}
+.hide {
+  visibility: hidden;
+}
